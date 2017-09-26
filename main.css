@@ -1,0 +1,41 @@
+
+
+/* main */
+	#main{
+		position: relative;
+		padding: 50px 0;
+		width: 700px;
+		margin: 0 auto;
+		font-family:Microsoft JhengHei;
+	}
+	
+		#main #header{
+			width: 100%;
+		}
+		
+			#main #header #my_photo_td{
+				width: 200px;
+				padding: 0 20px 0 0;
+			}
+			
+				#main #header #my_photo_td #my_photo{
+					width: 100%;
+				}
+		
+			#main #header a{
+				text-decoration:none
+			}
+		
+		#main #content{
+			
+		}
+		
+		#main #content h1{
+			padding: 0 0 0 0.5em;
+			background-color: #9d9d9d;
+		}
+		
+		#main #content .remark{
+			color: #bababa;
+			padding: 0 0 0 1.5em;
+		}
