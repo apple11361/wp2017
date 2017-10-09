@@ -1,0 +1,185 @@
+
+
+/* main */
+	#main{
+		position: relative;
+		padding: 50px 0;
+		width: 700px;
+		margin: 0 auto;
+		font-family:Microsoft JhengHei;
+	}
+	
+		#main #header{
+			width: 100%;
+		}
+		
+			#main #header #my_photo_td{
+				width: 200px;
+				padding: 0 20px 0 0;
+			}
+			
+				#main #header #my_photo_td #my_photo{
+					width: 100%;
+				}
+		
+			#main #header a{
+				text-decoration:none
+			}
+		
+		#main #content{
+			
+		}
+		
+			#main #content h1{
+				padding: 0 0 0 0.5em;
+				background-color: #9d9d9d;
+			}
+			
+			#main #content .remark{
+				color: #bababa;
+				padding: 0 0 0 1.5em;
+			}
+			
+			#main #content #guess{
+				position: relative;
+				padding: 50px;
+				width: 600px;
+				height: 400px;
+			}
+			
+				#main #content #guess h1{
+					padding: 0;
+					background-color: #000;
+					color: #fff;
+					text-align: center;
+					margin: 10px 10px 0 10px;
+				}
+				
+				#main #content #guess #movie_input{
+					position:absolute;
+					top: 0px;
+					left: 100px;
+					width: 500px;
+					height: 350px;
+					margin: 0 auto;
+					background: #000;
+					box-shadow: 20px 0px 30px 10px rgba(50, 50, 50, 0.5);
+					border-radius: 30px;
+				}
+				
+					#main #content #guess #movie_input #input_div{
+						margin: auto;
+						width: 300px;
+						padding: 10px;
+					}
+					
+						#main #content #guess #movie_input #input_div input{
+							width: 100%;
+							font-size: 20px;
+							border: 3px solid #73AD21;
+							padding: 5px 0 5px 10px;
+						}
+						
+						#main #content #guess #movie_input #input_div input::placeholder{
+							color: #bababa;
+						}
+						
+					#main #content #guess #movie_input #button_div{
+						margin: auto;
+						width: 150px;
+						padding: 10px;
+					}
+					
+						#main #content #guess #movie_input #button_div button{
+							width: 100%;
+							font-size: 20px;
+							padding: 5px 0 5px 0;
+							border-radius: 15px;
+							border-style: groove;
+						}
+				
+					#main #content #guess #movie_input h6{
+						color: #bababa;
+						text-align: center;
+						margin: 0;
+					}
+			
+				#main #content #guess #hint{
+					position:absolute;
+					top: 120px;
+					left: 150px;
+					width: 400px;
+					height: 300px;
+					margin: 0 auto;
+					background: #000;
+					box-shadow: 20px 0px 30px 10px rgba(100, 100, 100, 0.5);
+					border-radius: 20px;
+				}
+				
+					#main #content #guess #hint h1{
+						background-color: #000;
+						margin: 0;
+					}
+					
+					#main #content #guess #hint #magic_div{
+						margin: 0 auto;
+						width: 100%;
+						height: 180px;
+					}
+					
+					#main #content #guess #hint #button_div{
+						margin: auto;
+						width: 150px;
+						padding: 10px;
+					}
+					
+						#main #content #guess #hint #button_div button{
+							width: 100%;
+							font-size: 20px;
+							padding: 5px 0 5px 0;
+							border-radius: 15px;
+							border-style: groove;
+						}
+				
+				#main #content #guess #loading{
+					position:absolute;
+					top: 70px;
+					left: 150px;
+					width: 400px;
+					height: 400px;
+					margin: 0 auto;
+					background: #fff;
+					box-shadow: 0px 0px 10px 10px #cccccc;
+					border-radius: 400px;
+				}
+				
+				#main #content #guess #loading #wrong{
+					position: relative;
+					top: 130px;
+					color: #000;
+				}
+
+				#main #content #guess #loading #right{
+					position: relative;
+					top: 130px;
+					color: #000;
+				}
+
+				#main #content #guess #loading h1{
+					padding: 0;
+					background-color: #fff;
+					color: #000;
+					text-align: center;
+					margin: 10px 10px 0 10px;
+				}
+				
+				
+				
+		
+		
+		
+		
+		
+		
+		
+		

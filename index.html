@@ -4,7 +4,7 @@
 	<head>
 		<title>My resume</title>
 		<meta charset="utf-8" />
-		<link rel="stylesheet" href="main.css">
+		<link rel="stylesheet" href="assets/css/main.css">
 	</head>
 
 	<body>
@@ -12,7 +12,7 @@
 			<table id="header">
 				<tbody>
 					<tr>
-						<td id="my_photo_td"><img id="my_photo" src="my_photo.jpg"></td>
+						<td id="my_photo_td"><img id="my_photo" src="img/my_photo.jpg"></td>
 						<td>
 							<h1>Li Jun-De</h1>
 							<h2>+886 921070843</h2>
@@ -24,29 +24,79 @@
 			</table>
 			<div id="content">
 				<h1>INTRODUCTION</h1>
-				<p style="font-size: 20px;">I am currently a fourth-year computer science and information engineering student and have learned many basic and fundamental knowledge about information engineering during my undergraduate studies. In early years of my post-secondary education I spent a lot of effort exploring into software development and while I was doing that, I learned a lot of knowledge related to information security. I also had an interest in information security, so I spent my time after third-year learning more about it. Because I had previous knowledge of software development, my strength in information security is in reverse engineering. After a numerous CTF competitions I realized internet and internet communication security are also very important and closely related to everyday life. After a year of studies, I am able to code HTML, CSS, JavaScript, and PHP at a basic level.</p>
+				<p class="normal" style="font-size: 20px;">I am currently a fourth-year computer science and information engineering student and have learned many basic and fundamental knowledge about information engineering during my undergraduate studies. In early years of my post-secondary education I spent a lot of effort exploring into software development and while I was doing that, I learned a lot of knowledge related to information security. I also had an interest in information security, so I spent my time after third-year learning more about it. Because I had previous knowledge of software development, my strength in information security is in reverse engineering. After a numerous CTF competitions I realized internet and internet communication security are also very important and closely related to everyday life. After a year of studies, I am able to code HTML, CSS, JavaScript, and PHP at a basic level.</p>
+				<p class="magic" style="font-size: 20px;">I am a wizard from Taiwan.</p>
 				
 				<h1>EDUCATION</h1>
-				<h3>National Cheng Kung University, Tainan, Taiwan</h3>
-				<h4 style="padding:0 0 0 2em;">Computer Science and information engineering(2014 - Present)</h4>
-
+				<h3 class="normal">National Cheng Kung University, Tainan, Taiwan</h3>
+				<h4 class="normal" style="padding:0 0 0 2em;">Computer Science and information engineering(2014 - Present)</h4>
+				<h3 class="magic">Hogwarts School of Witchcraft and Wizardry, Scotland</h3>
 				
 				<h1>SKILLS</h1>
-				<li>C / C++ / C#</li>
-				<li>HTML / CSS / Javascript / PHP</li>
-				<li>reverse engineering</li>
+				<li class="normal">C / C++ / C#</li>
+				<li class="normal">HTML / CSS / Javascript / PHP</li>
+				<li class="normal">reverse engineering</li>
+				<li class="magic">Broom Flying</li>
+				<li class="magic">Defence Against the Dark Arts</li>
+				<li class="magic">Potions</li>
 				
 				<h1>EXPERIMENTS & PROJECTS</h1>
-				<li>NOSH-New Opportunities for Seniors Hackathon  (android application)</li>
-				<p class="remark">(2016第一屆台灣銀客松競賽)</p>
-				<li>E.SUN Commercial Bank Hackathon (Real Estate Website)</li>
-				<p class="remark">(2017玉山校園黑客松)</p>
-				<li>2017 Advanced Information Security Summer School</li>
-				<p class="remark">2017 AIS3 新型態資安暑期課程</p>
-				<li>新型態體感操控四軸空拍機之擴增實境應用</li>
+				<li class="normal">NOSH-New Opportunities for Seniors Hackathon  (android application)</li>
+				<p class="remark normal">(2016第一屆台灣銀客松競賽)</p>
+				<li class="normal">E.SUN Commercial Bank Hackathon (Real Estate Website)</li>
+				<p class="remark normal">(2017玉山校園黑客松)</p>
+				<li class="normal">2017 Advanced Information Security Summer School</li>
+				<p class="remark normal">2017 AIS3 新型態資安暑期課程</p>
+				<li class="normal">新型態體感操控四軸空拍機之擴增實境應用</li>
+				<li class="magic">Quidditch World Cup</li>
+				<li class="magic">Triwizard Tournament </li>
+				
+				<h1>My favorite movie</h1>
+				<div id="guess">
+					<div id="movie_input" onclick="change_login_page(this)">
+						<h1>Guess that</h1>
+						<br><br>
+						<div id="input_div">
+							<input id="pwd" placeholder="I only eat English alphabet!"></input>
+						</div>
+						<div id="button_div">
+							<button onclick="alohomora()">Alohomora</button>
+						</div>
+						<h6>Please <span style="color: red;">do not</span> open Developer Tools(F12).</h6>
+						<h6>That is not fun.</h6>
+						<h6>Don't google too, just try</h6>
+					</div>
+					<div id="hint" onclick="change_login_page(this)">
+						<div id="magic_div">
+							<h1 id="magic_str" style="color: #fff">I love magic</h1>
+						</div>
+						<div id="button_div">
+							<button onclick="lumos()">Lumos</button>
+						</div>
+						<h1 style="color: #fff;">Hint</h1>
+					</div>
+					<div id="loading" onclick="alohomora()">
+						<div id="wrong">
+							<h1>Unfortunately</h1>
+							<h1>You are wrong</h1>
+						</div>
+						<div id="right">
+							<h1>Congrats</h1>
+							<h1>You got me!</h1>
+						</div>
+					</div>
+				</div>
+				<audio id="player" controls loop>
+					<source src="music/Harry Potter Theme Song.mp3" type="audio/mpeg">
+				</audio>
 				
 			</div>
 		</div>
+		
+	<!--------------Scripts------------->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="assets/js/main.js"></script>
+		
 	</body>
 	
 
