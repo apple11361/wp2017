@@ -161,7 +161,7 @@ function after_animation(pwd)
 			player[0].play();
 			$('#content .normal').hide(3000);
 			$('#content .normal').fadeOut(3000);
-			$('#content .magic').fadeIn(3000);
+			$('#content .magic').fadeIn(5000);
 			$('html,body').animate({scrollTop: 300}, 2000);
 		});
 	}
@@ -192,4 +192,33 @@ function removeAllSpace(str)
 	return str.replace(/\s+/g, "");
 }
 
+function keyFunction()
+{
+	if (event.keyCode==123)
+	{
+		alert("拜託別 ! 雖然你硬要我也擋不住你QQ");
+		return false;
+	}
+	if ((event.ctrlKey) && ((event.keyCode==83)||(event.keyCode==85)))
+	{
+		alert("想看??乖乖用手去點開發人員工具");
+		return false;
+	}
+	if ((event.ctrlKey) && (event.shiftKey) && ((event.keyCode==74)||(event.keyCode==73)))
+	{
+		alert("這樣真的好嗎...?乖乖用手去點開發人員工具")
+		return false;
+	}
+}
+document.onkeydown = keyFunction;
+
+function mouseFunction()
+{
+	if(event.button == 2)
+	{
+		alert("好啦，右鍵別放");
+		return false;
+	}
+}
+document.onmousedown = mouseFunction;
 
